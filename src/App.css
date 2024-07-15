@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 20px auto;
+    width: 700px;
+}
+
+.home-element {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.background {
+    margin-bottom: 20px;
+    background-color: #ccc;
+    padding: 8px;
+}
+
+.myinput {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin: 10px;
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.text:focus {
+    outline: none;
+}
+
+.click {
+    background-color: #007bff;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.click:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.mymassage {
+    background-color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.content {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.Delete {
+    background-color: #03045e;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+.Delete:hover{
+    transform: scale(1.1);
+    transition: .4s;
+    background-color: #E91E63;
+}
+
+.counter {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter .count1 span {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #03045e;
+    color: white;
+    border-radius: 8px;
+}
+
+.counter .count2 span {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #03045e;
+    color: white;
+    border-radius: 8px;
+}
+
+.removeAll {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #03045e;
+    color: white;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.removeAll:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .content {
+        font-size: 5vw;
+    }
+
+    .text {
+        font-size: 3vw;
+    }
+
+    .counter .count1 span,
+    .counter .count2 span {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        font-size: 7vw;
+    }
+
+    .text {
+        font-size: 4vw;
+    }
+
+    .counter .count1 span,
+    .counter .count2 span {
+        font-size: 4vw;
+    }
+}
